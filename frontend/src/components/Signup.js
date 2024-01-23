@@ -73,7 +73,7 @@ function Signup() {
 
         if (Object.keys(error).length === 0) {
             setloader(true)
-            axios.post("https://sounth-indian.onrender.com/router/login", { Email1, Password1 }, { withCredentials: true })
+            axios.post("https://sounth-indian-backend.onrender.com/router/login", { Email1, Password1 }, { withCredentials: true })
                 .then((res) => {
                     if (res.data.status === "success") {
                         toast.success("Login Successfully")
@@ -107,7 +107,7 @@ function Signup() {
 
         if (Object.keys(Error).length === 0) {
             setloader(true)
-            axios.post("https://sounth-indian.onrender.com/router/signup", { Name, Email, Password }, { withCredentials: true })
+            axios.post("https://sounth-indian-backend.onrender.com/router/signup", { Name, Email, Password }, { withCredentials: true })
                 .then((res) => {
                     if (res.data.status === "success") {
                         toast.success("Signup Successfully")
