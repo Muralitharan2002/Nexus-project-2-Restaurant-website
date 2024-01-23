@@ -9,7 +9,7 @@ const useRoute = require('./Router/router')
 const port = process.env.PORT
 const url = process.env.DATABASE_URL
 
-app.use(cors({ origin: "https://sounth-indian.onrender.com", credentials: true }))
+app.use(cors({ origin: "https://nexus-project-2-restaurant-website.vercel.app", credentials: true }))
 app.use(express.json())
 
 
